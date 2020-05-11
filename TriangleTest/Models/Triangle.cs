@@ -6,8 +6,7 @@ namespace TriangleTest
     {
       if ((side1 + side2 < side3) || (side1 + side3 < side2) || (side2 + side3 < side1))
       {
-        // Console.WriteLine("Invalid triangle!");
-        return "false";
+        return "Invalid triangle!";
       }
       else if (side1 == side2 && side2 == side3 && side1 == side3)
       {
