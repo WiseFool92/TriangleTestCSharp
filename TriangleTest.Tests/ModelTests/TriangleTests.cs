@@ -4,13 +4,14 @@ using TriangleTest;
 namespace TriangleTest.TestTools
 {
   [TestClass]
-  public class TriangleTest
+  public class TriangleTypeTest
   {
     [TestMethod]
-    public void TriangleType()
+    public void TriangleType_ThreeSidesEqual_Equilateral()
     {
+      Triangle testTriangle = new Triangle();
       // logic to prep for the test : instantiante a new class
-      Assert.AreEqual(Expected Result, Code to Test);
+      Assert.AreEqual("Equilateral", testTriangle.TriangleType(3, 3, 3));
     }
   }
 }
