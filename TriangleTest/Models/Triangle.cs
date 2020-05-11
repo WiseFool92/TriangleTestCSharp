@@ -23,7 +23,7 @@ namespace TriangleTest
       }
       else
       {
-        return "false";
+        return "Error something went wrong!";
       }
     }
     public static void Main()
