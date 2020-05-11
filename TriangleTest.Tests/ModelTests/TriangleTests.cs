@@ -10,8 +10,13 @@ namespace TriangleTest.TestTools
     public void TriangleType_ThreeSidesEqual_Equilateral()
     {
       Triangle testTriangle = new Triangle();
-      // logic to prep for the test : instantiante a new class
       Assert.AreEqual("Equilateral", testTriangle.TriangleType(3, 3, 3));
+    }
+    [TestMethod]
+    public void TriangleType_TwoSidesEqual_Isosceles()
+    {
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual("Isosceles", testTriangle.TriangleType(2, 2, 3));
     }
   }
 }
