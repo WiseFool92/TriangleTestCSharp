@@ -18,5 +18,11 @@ namespace TriangleTest.TestTools
       Triangle testTriangle = new Triangle();
       Assert.AreEqual("Isosceles", testTriangle.TriangleType(2, 2, 3));
     }
+    [TestMethod]
+    public void TriangleType_NoSidesEqual_Scalene()
+    {
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual("Scalene", testTriangle.TriangleType(1, 2, 3));
+    }
   }
 }
